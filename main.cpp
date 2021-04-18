@@ -35,6 +35,21 @@ int main() {
         cout << "Did you read the lab instructions?" << endl;
     }
 
+    //NOW fill in these too
+    cout << "*** the state that needs the most high schools**" << endl;
+    //FILL IN 
+
+    cout << "*** the state that needs the most vaccines**" << endl;
+    //FILL IN 
+
+    cout << "*** the state that needs the most help with education**" << endl;
+    //FILL IN 
+
+    cout << "*** the state with most college grads**" << endl;
+    //FILL IN 
+
+    cout << "*** the state with largest percent of the population below the poverty line**" << endl;
+    //FILL IN
 
     return 0;
 }
