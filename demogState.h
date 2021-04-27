@@ -39,7 +39,7 @@ class demogState {
 
 
       double getpopOver65Percent() const {
-          return (popOver65Count / (totalPopulation2014 * 1.00)) * 100 / 1.00;
+          return (popOver65Count / (totalPopulation2014 * 1.00)) * 100;
       }
       double getpopUnder18Percent() const {
           return (popUnder18Count / (totalPopulation2014 * 1.00)) * 100;

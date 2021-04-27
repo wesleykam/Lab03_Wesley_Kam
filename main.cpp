@@ -28,7 +28,7 @@ int main() {
     //one example of how to print required - ADD OTHERS
     cout << "*** the state that needs the most pre-schools**" << endl;
     string needPK = theAnswers.youngestPop();
-    cout << "Name of state: " << needPK << endl;
+    //cout << "Name of state: " << needPK << endl;
     if (theAnswers.getStateData(needPK) != nullptr){
         cout << *(theAnswers.getStateData(needPK)) << endl;
     } else{
@@ -38,7 +38,7 @@ int main() {
     //NOW fill in these too
     cout << "*** the state that needs the most high schools**" << endl;
     string needHS = theAnswers.teenPop();
-    cout << "Name of state: " << needHS << endl;
+    //cout << "Name of state: " << needHS << endl;
     if (theAnswers.getStateData(needHS) != nullptr) {
         cout << *(theAnswers.getStateData(needHS)) << endl;
     }
@@ -48,7 +48,7 @@ int main() {
 
     cout << "*** the state that needs the most vaccines**" << endl;
     string needVaccines = theAnswers.wisePop();
-    cout << "Name of state: " << needVaccines << endl;
+    //cout << "Name of state: " << needVaccines << endl;
     if (theAnswers.getStateData(needVaccines) != nullptr) {
         cout << *(theAnswers.getStateData(needVaccines)) << endl;
     }
@@ -58,7 +58,7 @@ int main() {
 
     cout << "*** the state that needs the most help with education**" << endl;
     string needEdu = theAnswers.underServeHS();
-    cout << "Name of state: " << needEdu << endl;
+    //cout << "Name of state: " << needEdu << endl;
     if (theAnswers.getStateData(needEdu) != nullptr) {
         cout << *(theAnswers.getStateData(needEdu)) << endl;
     }
@@ -68,7 +68,7 @@ int main() {
 
     cout << "*** the state with most college grads**" << endl;
     string mostBA = theAnswers.collegeGrads();
-    cout << "Name of state: " << mostBA << endl;
+    //cout << "Name of state: " << mostBA << endl;
     if (theAnswers.getStateData(mostBA) != nullptr) {
         cout << *(theAnswers.getStateData(mostBA)) << endl;
     }
@@ -78,7 +78,7 @@ int main() {
 
     cout << "*** the state with largest percent of the population below the poverty line**" << endl;
     string mostPov = theAnswers.belowPoverty();
-    cout << "Name of state: " << mostPov << endl;
+    //cout << "Name of state: " << mostPov << endl;
     if (theAnswers.getStateData(mostPov) != nullptr) {
         cout << *(theAnswers.getStateData(mostPov)) << endl;
     }

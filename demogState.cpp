@@ -14,7 +14,7 @@ std::ostream& operator<<(std::ostream &out, const demogState&SD) {
 	out << fixed << showpoint;
 	out << setprecision(2);
 
-	out << "State Info:" << SD.getName() << endl;
+	out << "State Info: " << SD.getName() << endl;
 	out << "Number of Counties: " << (int)SD.getCounties() << endl;
 	out << "Population info: " << endl;
 	out << "(over 65): " << SD.getpopOver65Percent() << "% and total: " << (int)SD.getpopOver65Count() << endl;

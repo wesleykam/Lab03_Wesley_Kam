@@ -113,7 +113,7 @@ string dataAQ::underServeHS() {
 
 	for (std::map<std::string, shared_ptr<demogState>>::iterator it = stateData.begin(); it != stateData.end(); it++)
 	{
-		if (it->second->getHSupPercent() > stateData.at(maxState)->getHSupPercent())
+		if (it->second->getHSupCount() > stateData.at(maxState)->getHSupCount())
 			maxState = it->first;
 	}
 
@@ -139,7 +139,7 @@ string dataAQ::belowPoverty() {
 
 	for (std::map<std::string, shared_ptr<demogState>>::iterator it = stateData.begin(); it != stateData.end(); it++)
 	{
-		if (it->second->getpopUnder5Percent() > stateData.at(maxState)->getpopUnder5Percent())
+		if (it->second->getpopBelowPovertyPercent() > stateData.at(maxState)->getpopBelowPovertyPercent())
 			maxState = it->first;
 	}
 
