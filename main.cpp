@@ -37,19 +37,54 @@ int main() {
 
     //NOW fill in these too
     cout << "*** the state that needs the most high schools**" << endl;
-    //FILL IN 
+    string needHS = theAnswers.teenPop();
+    cout << "Name of state: " << needHS << endl;
+    if (theAnswers.getStateData(needHS) != nullptr) {
+        cout << *(theAnswers.getStateData(needHS)) << endl;
+    }
+    else {
+        cout << "Did you read the lab instructions?" << endl;
+    }
 
     cout << "*** the state that needs the most vaccines**" << endl;
-    //FILL IN 
+    string needVaccines = theAnswers.wisePop();
+    cout << "Name of state: " << needVaccines << endl;
+    if (theAnswers.getStateData(needVaccines) != nullptr) {
+        cout << *(theAnswers.getStateData(needVaccines)) << endl;
+    }
+    else {
+        cout << "Did you read the lab instructions?" << endl;
+    }
 
     cout << "*** the state that needs the most help with education**" << endl;
-    //FILL IN 
+    string needEdu = theAnswers.underServeHS();
+    cout << "Name of state: " << needEdu << endl;
+    if (theAnswers.getStateData(needEdu) != nullptr) {
+        cout << *(theAnswers.getStateData(needEdu)) << endl;
+    }
+    else {
+        cout << "Did you read the lab instructions?" << endl;
+    }
 
     cout << "*** the state with most college grads**" << endl;
-    //FILL IN 
+    string mostBA = theAnswers.collegeGrads();
+    cout << "Name of state: " << mostBA << endl;
+    if (theAnswers.getStateData(mostBA) != nullptr) {
+        cout << *(theAnswers.getStateData(mostBA)) << endl;
+    }
+    else {
+        cout << "Did you read the lab instructions?" << endl;
+    }
 
     cout << "*** the state with largest percent of the population below the poverty line**" << endl;
-    //FILL IN
+    string mostPov = theAnswers.belowPoverty();
+    cout << "Name of state: " << mostPov << endl;
+    if (theAnswers.getStateData(mostPov) != nullptr) {
+        cout << *(theAnswers.getStateData(mostPov)) << endl;
+    }
+    else {
+        cout << "Did you read the lab instructions?" << endl;
+    }
 
     return 0;
 }

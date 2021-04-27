@@ -3,8 +3,6 @@
 /* helper routines to read out csv data */
 #include "parse.h"
 
-/* LAB01 starter - replace with your revised version! */
-
 /* helper to strip out quotes from a string */
 string stripQuotes(std::string temp) {
     temp.erase(
@@ -55,17 +53,24 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
     double popOver65 = stod(getField(ss));
     double popUnder18 = stod(getField(ss));
     double popUnder5 = stod(getField(ss));
+    double BAup = stod(getField(ss));
+    double HSup = stod(getField(ss));
     //TODO for lab01, when you grab more data modify below loop to make sure you grab 
     //the right field
 
+    for (int i = 0; i < 20; i++)
+        getField(ss);
+
+    double belowPoverty = stod(getField(ss));
+
     //now skip over some data
-    for (int i=0; i < 33; i++)
+    for (int i=0; i < 10; i++)
         getField(ss);
 
     int totalPop2014 = stoi(getField(ss));
 
     return make_shared<demogData>(name, state, popOver65, popUnder18,
-            popUnder5, totalPop2014);
+            popUnder5, BAup, HSup, belowPoverty, totalPop2014);
 }
 
 

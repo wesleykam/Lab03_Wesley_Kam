@@ -2,17 +2,19 @@
 #include <sstream>
 
 /* print county demographic data */
-/*- LAB01 starter - replace with your FULL version! */
 std::ostream& operator<<(std::ostream &out, const demogData &DD) {
     out << "County Demographics Info: " << DD.getName() << ", " << DD.state;
     out << " total population: " << DD.totalPopulation2014;
     //consider re-writing with getters....
     out << "\nPopulation info: \n(\% over 65): " << DD.popOver65;
-    out <<  " Count: " << "fix";
+    out <<  " Count: " << DD.getpopOver65Count();
     out << "\n(\% under 18): " << DD.popUnder18;
-    out <<  " Count: " << "fix";
+    out <<  " Count: " << DD.getpopUnder18Count();
     out << "\n(\% under 5): " << DD.popUnder5;
-    out <<  " Count: " << "fix";
-    out << "\nEducation info: " << "fix this for lab01\n";
+    out <<  " Count: " << DD.getpopUnder5Count();
+    out << "\nEducation info: \n(\% Bachelor degree or more): " << DD.BAup;
+    out << " Count: " << DD.getBAupCount();
+    out << "\n(\% high school or more): " << DD.HSup;
+    out << " Count: " << DD.getHSupCount();
     return out;
 }

@@ -3,8 +3,8 @@
 
 #include <string>
 #include <iostream>
-#include <vector>
 #include <map>
+#include <vector>
 #include "demogState.h"
 
 /*
@@ -12,7 +12,7 @@
 */
 class dataAQ {
   public:
-    dataAQ();
+      dataAQ();
 
     /* necessary function to aggregate the data - this CAN and SHOULD vary per
         student - depends on how they map, etc. */
@@ -32,7 +32,7 @@ class dataAQ {
     string belowPoverty(); 
 
     //getter given a state name return a pointer to demogState data
-    shared_ptr<demogState> getStateData(string stateName) { /*fix this*/  return nullptr; }
+    shared_ptr<demogState> getStateData(string stateName) { return stateData.at(stateName); }
     
     //must implement output per aggregate data
     friend std::ostream& operator<<(std::ostream &out, const dataAQ &allStateData);
@@ -40,6 +40,7 @@ class dataAQ {
     //core data private for dataAQ
     private:
        //Decide how to aggregate the data into a map ADD here
+        map<string, shared_ptr<demogState>> stateData;
 
 };
 #endif
