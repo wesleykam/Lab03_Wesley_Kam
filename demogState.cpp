@@ -15,15 +15,16 @@ std::ostream& operator<<(std::ostream &out, const demogState&SD) {
 	out << setprecision(2);
 
 	out << "State Info: " << SD.getName() << endl;
-	out << "Number of Counties: " << (int)SD.getCounties() << endl;
+	out << "Number of Counties: " << SD.getCounties() << endl;
 	out << "Population info: " << endl;
-	out << "(over 65): " << SD.getpopOver65Percent() << "% and total: " << (int)SD.getpopOver65Count() << endl;
-	out << "(under 18): " << SD.getpopUnder18Percent() << "% and total: " << (int)SD.getpopUnder18Count() << endl;
-	out << "(under 18): " << SD.getpopUnder5Percent() << "% and total: " << (int)SD.getpopUnder5Count() << endl;
+	out << "(over 65): " << SD.getpopOver65Percent() << "% and total: " << SD.getpopOver65Count() << endl;
+	out << "(under 18): " << SD.getpopUnder18Percent() << "% and total: " << SD.getpopUnder18Count() << endl;
+	out << "(under 18): " << SD.getpopUnder5Percent() << "% and total: " << SD.getpopUnder5Count() << endl;
 	out << "Education info: " << endl;
-	out << "(Bachelor or more): " << SD.getBAupPercent() << "% and total: " << (int)SD.getBAupCount() << endl;
-	out << "(high school or more): " << SD.getHSupPercent() << "% and total: " << (int)SD.getHSupCount() << endl;
-	out << "persons below poverty: " << SD.getpopBelowPovertyPercent() << "% and total: " << (int)SD.getpopBelowPovertyCount();
+	out << "(Bachelor or more): " << SD.getBAupPercent() << "% and total: " << SD.getBAupCount() << endl;
+	out << "(high school or more): " << SD.getHSupPercent() << "% and total: " << SD.getHSupCount() << endl;
+	out << "persons below poverty: " << SD.getpopBelowPovertyPercent() << "% and total: " << SD.getpopBelowPovertyCount() << endl;
+	out << "Total population: " << SD.getPop();
 	return out;
 }
 
