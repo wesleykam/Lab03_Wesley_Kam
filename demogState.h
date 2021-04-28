@@ -19,13 +19,13 @@ class demogState {
           popUnder5Count(in5), BAupCount(BA), HSupCount(HS), popBelowPovertyCount(inP), totalPopulation2014(totPop14) {}
 
       string getName() const { return name; }
-      int getCounties() const{ return counties; }
-      int getpopOver65Count() const { return popOver65Count; }
-      int getpopUnder18Count() const { return popUnder18Count; }
-      int getpopUnder5Count() const { return popUnder5Count; }
-      int getBAupCount() const { return BAupCount; }
-      int getHSupCount() const { return HSupCount; }
-      int getpopBelowPovertyCount() const { return popBelowPovertyCount;  }
+      double getCounties() const{ return counties; }
+      double getpopOver65Count() const { return popOver65Count; }
+      double getpopUnder18Count() const { return popUnder18Count; }
+      double getpopUnder5Count() const { return popUnder5Count; }
+      double getBAupCount() const { return BAupCount; }
+      double getHSupCount() const { return HSupCount; }
+      double getpopBelowPovertyCount() const { return popBelowPovertyCount;  }
       int getPop() const { return totalPopulation2014; }
 
       void setCounties(int count) { counties = count; }
@@ -62,7 +62,7 @@ class demogState {
 	private:
 	//DATA here
         string name;
-        int counties;
+        double counties;
         double popOver65Count;
         double popUnder18Count;
         double popUnder5Count;

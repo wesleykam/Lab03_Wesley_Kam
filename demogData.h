@@ -32,23 +32,23 @@ class demogData {
     double getpopBelowPoverty() const { return belowPoverty; }
     int getPop() const { return totalPopulation2014; }
 
-    int getpopOver65Count() const {
-        return ((double)popOver65/100.00) * totalPopulation2014;
+    double getpopOver65Count() const {
+        return (static_cast<double>(popOver65)/100.00) * totalPopulation2014;
     }
-    int getpopUnder18Count() const {
-        return ((double)popUnder18/100.00) * totalPopulation2014;
+    double getpopUnder18Count() const {
+        return (static_cast<double>(popUnder18)/100.00) * totalPopulation2014;
     }
-    int getpopUnder5Count() const {
-        return ((double)popUnder5/100.00) * totalPopulation2014;
+    double getpopUnder5Count() const {
+        return (static_cast<double>(popUnder5)/100.00) * totalPopulation2014;
     }    
-    int getBAupCount() const {
-        return ((double)BAup/100.00) * totalPopulation2014;
+    double getBAupCount() const {
+        return (static_cast<double>(BAup)/100.00) * totalPopulation2014;
     }    
-    int getHSupCount() const {
-        return ((double)HSup/100.00) * totalPopulation2014;
+    double getHSupCount() const {
+        return (static_cast<double>(HSup)/100.00) * totalPopulation2014;
     }
-    int getpopBelowPovertyCount() const {
-        return ((double)belowPoverty/100.00) * totalPopulation2014;
+    double getpopBelowPovertyCount() const {
+        return (static_cast<double>(belowPoverty)/100.00) * totalPopulation2014;
     }
    
    friend std::ostream& operator<<(std::ostream &out, const demogData &DD);
