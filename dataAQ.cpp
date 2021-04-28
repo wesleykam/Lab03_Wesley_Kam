@@ -113,7 +113,7 @@ string dataAQ::underServeHS() {
 
 	for (std::map<std::string, shared_ptr<demogState>>::iterator it = stateData.begin(); it != stateData.end(); it++)
 	{
-		if (it->second->getHSupCount() > stateData.at(maxState)->getHSupCount())
+		if (100 - it->second->getHSupPercent() > 100 - stateData.at(maxState)->getHSupPercent())
 			maxState = it->first;
 	}
 
